@@ -1,0 +1,30 @@
+# alacritty.toml
+[general]
+import = [
+    "~/AppData/Roaming/alacritty/themes/tokyo_night.toml"
+]
+
+[env]
+TERM = "xterm-256color"  # 确保颜色支持
+
+[window]
+opacity = 0.93
+blur = true     # 开启模糊效果，让透明更柔和
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+decorations = "None"  # 完全隐藏标题栏
+position = { x = 140, y = 100 }  # 这个是像素坐标，需要计算
+dimensions = { columns = 180, lines = 50 }  # 窗口大小（字符单位）
+
+[font]
+normal = { family = "Hack Nerd Font" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+italic = { family = "Hack Nerd Font", style = "Italic" }
+
+[mouse]
+hide_when_typing = true  # 输入时隐藏鼠标
+
+[[keyboard.bindings]]
+key = "D"
+mods = "Control"
+action = "Quit"
