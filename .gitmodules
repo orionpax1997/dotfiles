@@ -1,0 +1,3 @@
+[submodule "general/nvim"]
+	path = general/nvim
+	url = git@github.com:orionpax1997/kickstart.nvim.git
